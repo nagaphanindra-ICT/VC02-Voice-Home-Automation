@@ -70,3 +70,19 @@ Voice Command → VC02 Module → GPIO Output → Relay/LED → Appliance Contro
 - Improves efficiency and avoids unnecessary processing
 
 ---
+
+## ⚡ Fan Speed Control Simulation
+
+The fan speed control is implemented using a capacitive dimming circuit.
+
+### Working Principle
+- Different capacitors are used to control current flow
+- Relay selects capacitor based on voice command
+- This changes fan speed
+
+### Simulation Results
+- 2.2µF capacitor → Low speed
+- 3.3µF capacitor → Medium speed
+- Combined capacitors → High speed
+
+This simulation validates the practical circuit design used in the project.
