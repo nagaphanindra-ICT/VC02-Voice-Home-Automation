@@ -21,7 +21,7 @@ To start the marathon development and understand the VC02 module and project con
 - No internet required (offline system)
 - Suitable for smart home automation
 
-## VC02 Architecture Diagram (Text Representation)
+## VC02 Architecture Diagram
 
                 ┌───────────┬───────────┬───────────┐
                 │   Power   │   RESET   │    PLL    │
@@ -61,8 +61,7 @@ To start the marathon development and understand the VC02 module and project con
       │   SPI    │
       └──────────┘
 
-      ## Understanding from Architecture
-
+## Understanding from Architecture
 - VC02 uses a RISC processor for processing voice commands
 - DSP, FPU, and FFT units help in speech recognition
 - GPIO pins are used to control external devices like relays
