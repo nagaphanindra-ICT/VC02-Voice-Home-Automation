@@ -71,3 +71,6 @@ To start the marathon development and understand the VC02 module and project con
 The VC02 module is built with a RISC processor and DSP units for speech recognition. It includes GPIO pins for controlling external devices like relays and supports communication interfaces such as UART, I2C, and SPI.
 
 This makes it suitable for offline voice-controlled home automation systems.
+
+## Reference
+- VC02 Official Datasheet added in repository
