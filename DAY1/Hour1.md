@@ -20,3 +20,51 @@ To start the marathon development and understand the VC02 module and project con
 - VC02 can directly control appliances using relay
 - No internet required (offline system)
 - Suitable for smart home automation
+
+## VC02 Architecture Diagram (Text Representation)
+
+                ┌───────────┬───────────┬───────────┐
+                │   Power   │   RESET   │    PLL    │
+                └───────────┴───────────┴───────────┘
+
+      ┌──────────┐
+      │  AMic    │
+      ├──────────┤
+      │  DMic    │
+      ├──────────┤
+      │   DAC    │
+      ├──────────┤
+      │ I2S I/O  │
+      └──────────┘
+
+                 ┌──────────────────────────┐
+                 │          RISC            │
+                 │  ┌──────┬──────┬──────┐ │
+                 │  │ DSP  │ FPU  │ FFT  │ │
+                 │  └──────┴──────┴──────┘ │
+                 │          DMA            │
+                 └──────────────────────────┘
+
+           ┌───────────────┬───────────────┐
+           │     SRAM      │     FLASH     │
+           └───────────────┴───────────────┘
+
+      ┌──────────┐
+      │   GPIO   │
+      ├──────────┤
+      │   UART   │
+      ├──────────┤
+      │   I2C    │
+      ├──────────┤
+      │   PWM    │
+      ├──────────┤
+      │   SPI    │
+      └──────────┘
+
+      ## Understanding from Architecture
+
+- VC02 uses a RISC processor for processing voice commands
+- DSP, FPU, and FFT units help in speech recognition
+- GPIO pins are used to control external devices like relays
+- Communication interfaces include UART, I2C, SPI
+- Internal memory (SRAM, Flash) is used for storing commands and processing data
