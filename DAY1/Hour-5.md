@@ -35,7 +35,6 @@ To enhance the system by implementing fan speed control and validating the desig
 - Importance of simulation before real implementation
 
 ## Simulation Proof
-
 ![Simulation 1](../fan_simulation_1.png)
 ![Simulation 2](../fan_simulation_2.png)
 ![Simulation 3](../fan_simulation_3.png)
