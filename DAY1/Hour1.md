@@ -7,8 +7,6 @@ To start the marathon development and understand the VC02 module and project con
 - Started 12-hour marathon development
 - Finalized project: VoiceNest (Voice Controlled Home Automation using VC02)
 - Studied VC02 official datasheet
-- Understood system working flow:
-  Voice → VC02 → Relay → Appliance
 
 ## Technical Understanding
 - VC02 is an offline voice recognition module
@@ -67,3 +65,9 @@ To start the marathon development and understand the VC02 module and project con
 - GPIO pins are used to control external devices like relays
 - Communication interfaces include UART, I2C, SPI
 - Internal memory (SRAM, Flash) is used for storing commands and processing data
+
+## VC02 Architecture Understanding
+
+The VC02 module is built with a RISC processor and DSP units for speech recognition. It includes GPIO pins for controlling external devices like relays and supports communication interfaces such as UART, I2C, and SPI.
+
+This makes it suitable for offline voice-controlled home automation systems.
