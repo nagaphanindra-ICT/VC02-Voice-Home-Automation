@@ -21,7 +21,7 @@ To build a working prototype of the VC02 voice-controlled home automation system
 - System responded correctly to ON/OFF commands
 
 ## Proof
-- Video of working prototype attached
+- Video of working prototype attached (project_prototype_1)
 
 ## Learning
 - Practical implementation of voice-controlled system
