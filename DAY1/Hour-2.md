@@ -22,5 +22,13 @@ To understand VC02 configuration, GPIO control, and voice command mapping.
 - System works using predefined voice commands
 - GPIO signals directly control relay module
 
+## Example Mapping (From Configuration)
+
+- "Turn on first light" → GPIO_B0 HIGH
+- "Turn off first light" → GPIO_B0 LOW
+- "Turn on fan" → GPIO_B7 HIGH
+
+This shows how VC02 directly controls appliances using GPIO signals.
+
 ## Reference
 - VC02 Website Configuration Details (added in repository)
